@@ -1,10 +1,64 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
+    {
+      "label": "Brand information",
+      "variables": [
+        {
+          "identifier": "brand_identity",
+          "type": "list",
+          "description": "Brand identity",
+          "label": "The identity of the Help Center",
+          "value": "paragin",
+          "options": [
+            {
+              "label": "Paragin",
+              "value": "paragin"
+            },
+            {
+              "label": "B3net",
+              "value": "b3net"
+            },
+            {
+              "label": "Coachview",
+              "value": "coachview"
+            },
+            {
+              "label": "GradeWork",
+              "value": "gradeWork"
+            },
+            {
+              "label": "OMPT",
+              "value": "ompt"
+            },
+            {
+              "label": "OnStage",
+              "value": "onStage"
+            },
+            {
+              "label": "OnTrac",
+              "value": "onTrac"
+            },
+            {
+              "label": "Remindo",
+              "value": "remindo"
+            },
+            {
+              "label": "Skillsly",
+              "value": "skillsly"
+            },
+            {
+              "label": "Sowiso",
+              "value": "sowiso"
+            }
+          ]
+        }
+      ]
+    },
     {
       "label": "brand_group_label",
       "variables": [
