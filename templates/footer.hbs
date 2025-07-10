@@ -1,0 +1,44 @@
+<footer class="footer text-center">
+   <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+         <div class="social_icons element-fade animate__animated">
+            <ul class="social">
+               {{#isnt settings.facebook_url '-'}}
+                  <li><a href="{{settings.facebook_url}}" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.twitter_url '-'}}
+                  <li><a href="{{settings.twitter_url}}" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.linkedin_url '-'}}
+                  <li><a href="{{settings.linkedin_url}}" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.pinterest_url '-'}}
+                  <li><a href="{{settings.pinterest_url}}" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.instagram_url '-'}}
+                  <li><a href="{{settings.instagram_url}}" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.youtube_url '-'}}
+                  <li><a href="{{settings.youtube_url}}" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.github_url '-'}}
+                  <li><a href="{{settings.github_url}}" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.tiktok_url '-'}}
+                  <li><a href="{{settings.tiktok_url}}" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.threads_url '-'}}
+               <li><a href="{{settings.threads_url}}" target="_blank"><i class="fa-brands fa-threads"></i></a></li>
+               {{/isnt}}
+               {{#isnt settings.medium_url '-'}}
+                  <li><a href="{{settings.medium_url}}" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
+               {{/isnt}}
+            </ul>
+         </div>
+   </div>
+   <aside class="footer-legal text-center">
+      <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+         <p>&copy; <span id="year"></span> <a class="attribution"></a> <span class="reserved"></span> </p>
+         {{!--<p>&copy; <span id="year"></span> {{settings.copyright_text}}</p>--}}
+      </div>
+   </aside>
+</footer>

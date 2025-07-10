@@ -1,0 +1,120 @@
+<a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
+
+{{!-- Alert bar --}}
+{{#if settings.alert_bar}}
+<div class="alert--bar {{#if settings.fixed_header}}height-42{{/if}}">
+  <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+  	{{#if settings.translations_enable}}{{dc settings.alert_text}}{{else}}{{settings.alert_text}}{{/if}} <a href="{{#if settings.translations_enable}}{{dc settings.alert_link_url}}{{else}}{{settings.alert_link_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.alert_link_text}}{{else}}{{settings.alert_link_text}}{{/if}}</a>
+  </div>
+</div>
+{{/if}}
+
+{{!-- Fixed divider --}}
+{{#if settings.fixed_header}}
+<div class="fixed-divider"></div>
+{{/if}}
+
+{{!-- Hero block --}}
+<header class="hc_header {{#if settings.fixed_header}}fixed--header{{/if}} {{#if settings.alert_bar}}top-42{{/if}}">
+   <div class="header cd-header {{#is settings.container_layout 'full'}}full--width{{/is}}">
+      {{!-- Logo --}}
+      <div class="logo">
+         <a title="{{help_center.name}}" href="{{#if settings.enable_link}}{{settings.enable_link_url}}{{else}}{{help_center.url}}{{/if}}">
+           <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+           {{#isnt settings.logo_tagline ''}}
+           <span aria-hidden="true">{{#if settings.translations_enable}}{{dc settings.logo_tagline}}{{else}}{{settings.logo_tagline}}{{/if}}</span>
+           {{/isnt}}
+         </a>
+      </div>
+      <div class="nav-wrapper">
+         <button class="menu-button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-menu">
+               <path fill="none" stroke="currentColor" stroke-linecap="round" d="M1.5 3.5h13m-13 4h13m-13 4h13"/>
+            </svg>
+         </button>
+         <nav class="user-nav" id="user-nav">
+            {{!-- Community URL --}}
+            {{#if settings.enable_community}}
+              {{link 'community' class="xs_hide"}}
+            {{/if}}
+
+            {{!-- New ticket URL --}}
+            {{#if settings.enable_ticket}}
+              {{link 'new_request' class='submit-a-request xs_hide'}}
+            {{/if}}
+         </nav>
+         {{#if signed_in}}
+         <div class="user-info dropdown">
+            <button class="dropdown-toggle" aria-haspopup="true">
+               {{user_avatar class="user-avatar"}}
+               {{user_name}}
+               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon" aria-hidden="true">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
+               </svg>
+            </button>
+            <div class="dropdown-menu animate__fadeInDown animate__animated" role="menu">
+               {{#my_profile role="menuitem"}}{{t 'profile'}}{{/my_profile}}
+               {{link "requests" role="menuitem"}}
+               {{#link "contributions" role="menuitem"}}{{t "activities"}}{{/link}}
+               {{contact_details role="menuitem"}}
+               {{change_password role="menuitem"}}
+               <div class="separator" role="separator"></div>
+               {{link "sign_out" role="menuitem"}}
+            </div>
+         </div>
+         {{else}}
+         {{#if settings.enable_signin}}
+         {{#link "sign_in"}}
+           {{t 'sign_in'}}
+         {{/link}}
+         {{/if}}
+         {{/if}}
+         {{!-- Language option --}}
+         {{#if alternative_locales}}
+         <div class="dropdown language-selector">
+            <button class="dropdown-toggle" aria-haspopup="true">
+               {{current_locale.name}}
+               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
+               </svg>
+            </button>
+            <span class="dropdown-menu dropdown-menu-end animate__fadeInDown animate__animated" role="menu">
+            {{#each alternative_locales}}
+            <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+            {{name}}
+            </a>
+            {{/each}}
+            </span>
+         </div>
+         {{/if}}
+         {{#isnt settings.custom_menu '-'}}
+         <a class="cd-primary-nav-trigger" href="#">
+           {{#isnt settings.custom_menu ''}}<span class="cd-menu-text">{{#if settings.translations_enable}}{{dc settings.custom_menu}}{{else}}{{settings.custom_menu}}{{/if}}</span>{{/isnt}}<span class="cd-menu-icon {{#is settings.custom_menu ''}}ml-5{{/is}}"></span>
+         </a>
+         {{/isnt}}
+      </div>
+   </div>
+</header>
+{{!-- Dropdown menu links --}}
+<nav class="dropdown--links">
+   <ul class="cd-primary-nav">
+      {{#isnt settings.dropdown1 '-'}}
+      <li><a href="{{#if settings.translations_enable}}{{dc settings.dropdown1_url}}{{else}}{{settings.dropdown1_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.dropdown1}}{{else}}{{settings.dropdown1}}{{/if}}</a></li>
+      {{/isnt}}
+      {{#isnt settings.dropdown2 '-'}}
+      <li><a href="{{#if settings.translations_enable}}{{dc settings.dropdown2_url}}{{else}}{{settings.dropdown2_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.dropdown2}}{{else}}{{settings.dropdown2}}{{/if}}</a></li>
+      {{/isnt}}
+      {{#isnt settings.dropdown3 '-'}}
+      <li><a href="{{#if settings.translations_enable}}{{dc settings.dropdown3_url}}{{else}}{{settings.dropdown3_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.dropdown3}}{{else}}{{settings.dropdown3}}{{/if}}</a></li>
+      {{/isnt}}
+      {{#isnt settings.dropdown4 '-'}}
+      <li><a href="{{#if settings.translations_enable}}{{dc settings.dropdown4_url}}{{else}}{{settings.dropdown4_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.dropdown4}}{{else}}{{settings.dropdown4}}{{/if}}</a></li>
+      {{/isnt}}
+      {{#if settings.enable_community}}
+      <li class="visible_xs">{{link 'community'}}</li>
+      {{/if}}
+      {{#if settings.enable_ticket}}
+      <li class="visible_xs">{{link 'new_request'}}</li>
+      {{/if}}
+   </ul>
+</nav>
