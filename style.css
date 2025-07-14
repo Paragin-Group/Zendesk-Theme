@@ -19,19 +19,19 @@
   --secondary-color-dark: color-mix(in srgb, black 20%, var(--secondary-color));
   --tertiary-color-dark:  color-mix(in srgb, black 20%, var(--tertiary-color));
 
-  --brand-color: --primary-color;
+  --brand-color: var(--primary-color);
   --text-color: #2f2f2f;
-  --link-color: --primary-color;
+  --link-color: var(--primary-color);
   --brand-text-color: #fbfbfb;
   --border-color: #dddddd;
-  --submit-bg-color: --primary-color;
-  --dropdown-menu-color: --primary-color;
-  --menu-color: --primary-color;
-  --categories-bg-color: --primary-color;
-  --categories-icon-color: --primary-color;
+  --submit-bg-color: var(--primary-color);
+  --dropdown-menu-color: var(--primary-color);
+  --menu-color: var(--primary-color);
+  --categories-bg-color: var(--primary-color);
+  --categories-icon-color: #fff;
   --bg-color: #f7f7f7;
-  --hero-unit-bg-color:--primary-color-light;
-  --hero-unit-title-color:--primary-color;
+  --hero-unit-bg-color: var(--primary-color-light);
+  --hero-unit-title-color: var(--primary-color);
   --footer-color: #f7f7f7;
   --footer-text-color: #f7f7f7;
 }
