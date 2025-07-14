@@ -72,6 +72,7 @@
 
   --brand-color: var(--primary-color);
   --text-color: #2f2f2f;
+  --text-color-light: #333;
   --link-color: var(--primary-color);
   --brand-text-color: #fbfbfb;
   --border-color: #dddddd;
@@ -500,8 +501,8 @@ h1.form-header {
 }
 
 .button.button-primary:hover, .section-subscribe button.button-primary:hover, .section-subscribe button[data-selected="true"]:hover, .article-subscribe button.button-primary:hover, .article-subscribe button[data-selected="true"]:hover, .community-follow button.button-primary:hover, .requests-table-toolbar .organization-subscribe button.button-primary:hover, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:hover, .subscriptions-subscribe button.button-primary:hover, .subscriptions-subscribe button[data-selected="true"]:hover, .button-primary.pagination-next-link:hover, .button-primary.pagination-prev-link:hover, .button-primary.pagination-first-link:hover, .button-primary.pagination-last-link:hover, .edit-profile-button a.button-primary:hover, .button.button-primary:focus, .section-subscribe button.button-primary:focus, .section-subscribe button[data-selected="true"]:focus, .article-subscribe button.button-primary:focus, .article-subscribe button[data-selected="true"]:focus, .community-follow button.button-primary:focus, .requests-table-toolbar .organization-subscribe button.button-primary:focus, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:focus, .subscriptions-subscribe button.button-primary:focus, .subscriptions-subscribe button[data-selected="true"]:focus, .button-primary.pagination-next-link:focus, .button-primary.pagination-prev-link:focus, .button-primary.pagination-first-link:focus, .button-primary.pagination-last-link:focus, .edit-profile-button a.button-primary:focus, .button.button-primary:active, .section-subscribe button.button-primary:active, .section-subscribe button[data-selected="true"]:active, .article-subscribe button.button-primary:active, .article-subscribe button[data-selected="true"]:active, .community-follow button.button-primary:active, .requests-table-toolbar .organization-subscribe button.button-primary:active, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:active, .subscriptions-subscribe button.button-primary:active, .subscriptions-subscribe button[data-selected="true"]:active, .button-primary.pagination-next-link:active, .button-primary.pagination-prev-link:active, .button-primary.pagination-first-link:active, .button-primary.pagination-last-link:active, .edit-profile-button a.button-primary:active {
-  background-color: darken(var(--brand-color), 20%);
-  border-color: darken(var(--brand-color), 20%);
+  background-color: var(--primary-color-dark);
+  border-color: var(--primary-color-dark);
 }
 
 .button[data-disabled], .section-subscribe button[data-disabled], .article-subscribe button[data-disabled], .community-follow button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .subscriptions-subscribe button[data-disabled], .pagination-next-link[data-disabled], .pagination-prev-link[data-disabled], .pagination-first-link[data-disabled], .pagination-last-link[data-disabled], .edit-profile-button a[data-disabled] {
@@ -529,7 +530,7 @@ h1.form-header {
 }
 
 .button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-  background-color: darken(var(--brand-color), 20%);
+  background-color: var(--primary-color-dark);
 }
 
 .button-large[disabled], input[type="submit"][disabled] {
@@ -537,7 +538,7 @@ h1.form-header {
 }
 
 .button-secondary {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   border: 1px solid var(--border-color);
   background-color: transparent;
 }
@@ -570,7 +571,7 @@ h1.form-header {
 
 .table th,
 .table th a {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-size: 13px;
   text-align: left;
 }
@@ -690,12 +691,12 @@ h1.form-header {
 }
 
 .form-field .optional {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   margin-left: 4px;
 }
 
 .form-field p {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-size: 12px;
   margin: 5px 0;
 }
@@ -707,7 +708,7 @@ h1.form-header {
 }
 
 .form footer a {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   cursor: pointer;
   margin-right: 15px;
 }
@@ -735,7 +736,7 @@ h1.form-header {
 }
 
 .form .suggestion-list li a:visited {
-  color: darken(var(--link-color), 20%);
+  color: var(--primary-color-dark);
 }
 
 .form .upload-item {
@@ -1140,7 +1141,7 @@ h1.form-header {
 }
 
 .footer-language-selector {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   display: inline-block;
 }
 
@@ -1158,7 +1159,7 @@ h1.form-header {
 }
 
 .breadcrumbs li {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   display: inline;
   font-size: 13px;
   max-width: 450px;
@@ -1237,7 +1238,6 @@ h1.form-header {
   min-width: 100px;
   max-width: 100px;
   border-radius: 0 $border_radius $border_radius 0;
-  background: var(--submit-bg-color);
   color: var(--brand-text-color);
   padding: 0;
 }
@@ -1895,7 +1895,7 @@ button.clear-button {
 }
 
 .recent-activity-item-time, .recent-activity-item-comment {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   display: inline-block;
   font-size: 13px;
 }
@@ -2211,7 +2211,7 @@ button.clear-button {
 }
 
 .article-body a:visited {
-  color: darken(var(--link-color), 20%);
+  color: var(--primary-color-dark);
 }
 
 .article-body a {
@@ -2244,7 +2244,7 @@ button.clear-button {
 
 .article-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-style: italic;
   padding: 0 15px;
 }
@@ -2267,7 +2267,7 @@ button.clear-button {
 }
 
 .article-comment-count {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
 }
 
 .article-comment-count:hover {
@@ -2507,7 +2507,7 @@ button.clear-button {
 }
 
 .upload-dropzone span {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
 }
 
 /***** Social share links *****/
@@ -2526,7 +2526,7 @@ button.clear-button {
 }
 
 .share a {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
 }
 
 .share a:hover {
@@ -2566,7 +2566,7 @@ button.clear-button {
 }
 
 .comment-callout {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   display: inline-block;
   font-size: 13px;
   margin-bottom: 0;
@@ -2582,7 +2582,7 @@ button.clear-button {
 }
 
 .comment-sorter .dropdown-toggle {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-weight: 300;
   font-size: 13px;
 }
@@ -2762,7 +2762,7 @@ button.clear-button {
 }
 
 .comment-body a:visited {
-  color: darken(var(--link-color), 20%);
+  color: var(--primary-color-dark);
 }
 
 .comment-body code {
@@ -2784,7 +2784,7 @@ button.clear-button {
 
 .comment-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-style: italic;
   padding: 0 15px;
 }
@@ -2806,7 +2806,7 @@ button.clear-button {
 }
 
 .vote-sum {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   display: block;
   margin: 3px 0;
 }
@@ -2831,7 +2831,7 @@ button.clear-button {
   appearance: none;
   background-color: transparent;
   border: none;
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   cursor: pointer;
   min-height: 35px;
   min-width: 35px;
@@ -2845,7 +2845,7 @@ button.clear-button {
 }
 
 .vote-voted:hover {
-  color: darken(var(--brand-color), 20%);
+  color: var(--primary-color-dark);
 }
 
 /***** Actions *****/
@@ -3015,8 +3015,8 @@ button.clear-button {
 }
 
 .community-follow button[data-selected="true"]:hover {
-  background-color: darken(var(--brand-color), 20%);
-  border-color: darken(var(--brand-color), 20%);
+  background-color: var(--primary-color-dark);
+  border-color: var(--primary-color-dark);
 }
 
 .community-follow button::after {
@@ -3080,7 +3080,7 @@ button.clear-button {
 }
 
 .striped-list-title:visited {
-  color: darken(var(--link-color), 20%);
+  color: var(--primary-color-dark);
 }
 
 .striped-list .meta-group {
@@ -3088,7 +3088,7 @@ button.clear-button {
 }
 
 .striped-list-count {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-size: 13px;
   justify-content: flex-start;
   text-transform: capitalize;
@@ -3178,7 +3178,7 @@ button.clear-button {
 
 .status-label-not-planned, .status-label-closed {
   background-color: #e9ebed;
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
 }
 
 .status-label-pending, .status-label-pending-moderation {
@@ -3350,7 +3350,7 @@ button.clear-button {
 }
 
 .post-body a:visited {
-  color: darken(var(--link-color), 20%);
+  color: var(--primary-color-dark);
 }
 
 .post-body code {
@@ -3372,7 +3372,7 @@ button.clear-button {
 
 .post-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-style: italic;
   padding: 0 15px;
 }
@@ -3385,7 +3385,7 @@ button.clear-button {
 }
 
 .post-comment-count {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
 }
 
 .post-comment-count:hover {
@@ -3911,7 +3911,7 @@ button.clear-button {
 
 /* Contributions table */
 .contributions-table td:last-child {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-size: 13px;
 }
 
@@ -3924,7 +3924,7 @@ button.clear-button {
 }
 
 .no-activities {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
 }
 
 /***** Request *****/
@@ -3992,7 +3992,7 @@ button.clear-button {
 .request-main .comment-show-container {
   border-radius: 2px;
   border: 1px solid var(--border-color);
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   text-align: inherit;
   padding: 8px 25px;
   width: 100%;
@@ -4186,7 +4186,7 @@ button.clear-button {
 }
 
 .meta-data {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-size: 13px;
 }
 
@@ -4325,7 +4325,7 @@ button.clear-button {
 }
 
 .profile-stats .stat-label {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   flex: 0 0 100px;
   margin-right: 10px;
 }
@@ -4485,7 +4485,7 @@ button.clear-button {
 .profile-section-description {
   flex-basis: 100%;
   padding: 10px 0;
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-size: 13px;
   white-space: nowrap;
   overflow: hidden;
@@ -4976,7 +4976,7 @@ button.clear-button {
 }
 
 .search-result-votes, .search-result-meta-count {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   display: inline-block;
   font-size: 13px;
   padding: 4px 5px;
@@ -5724,7 +5724,7 @@ span.ml-5 {
 }
 
 .profile-badges-item-description, .profile-badges-item-metadata-description {
-  color: lighten(var(--text-color), 20%);
+  color: var(--text-color-light);
   font-size: 13px;
   margin: 0;
 }
@@ -6091,8 +6091,8 @@ body .note--message {
 }
 
 body .support--message {
-  background: lighten(var(--brand-color), 30%);
-  border: 2px solid darken(var(--brand-color), 10%);
+  background: var(--primary-color-light);
+  border: 2px solid var(--primary-color-dark);
 }
 
 body .note--message::before {
@@ -6100,7 +6100,7 @@ body .note--message::before {
 }
 
 body .support--message::before {
-  border: 2px solid darken(var(--brand-color), 10%);
+  border: 2px solid var(--primary-color-dark);
 }
 
 body .warning--message {
@@ -6258,7 +6258,7 @@ ul#tabs-nav > li {
 
 ul#tabs-nav > li:hover,
 ul#tabs-nav > li.active {
-  background-color: darken(var(--brand-color), 20%);
+  background-color: var(--primary-color-dark);
 }
 
 #tabs-nav > li > a {
