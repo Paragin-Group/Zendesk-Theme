@@ -11,60 +11,60 @@
   --secondary-color:#aec99b;
   --tertiary-color:#bacaee;
 }
-.brand-paragin {
+.brand-container.brand-paragin {
   --primary-color:#57528d;
   --secondary-color:#aec99b;
   --tertiary-color:#bacaee;
 }
-.brand-b3net {
+.brand-container.brand-b3net {
   --primary-color:#ee0011;
   --secondary-color:#1559ed;
   --tertiary-color:#6ab6e6;
 }
-.brand-coachview {
+.brand-container.brand-coachview {
   --primary-color:#2d5d82;
   --secondary-color:#a2d169;
   --tertiary-color:#edbd77;
 }
-.brand-gradework {
+.brand-container.brand-gradework {
   --primary-color:#77424d;
   --secondary-color:#a7c4e1;
   --tertiary-color:#fcbcb8;
 }
-.brand-ompt {
+.brand-container.brand-ompt {
   --primary-color:#036073;
   --secondary-color:#85b6b7;
   --tertiary-color:#85b6b7;
 }
-.brand-onstage {
+.brand-container.brand-onstage {
   --primary-color:#204a6c;
   --secondary-color:#fede6f;
   --tertiary-color:#acddb1;
 }
-.brand-ontrac {
+.brand-container.brand-ontrac {
   --primary-color:#05585b;
   --secondary-color:#f9ae6a;
   --tertiary-color:#a1e2df;
 }
-.brand-remindo {
+.brand-container.brand-remindo {
   --primary-color:#3d5a85;
   --secondary-color:#92d8d2;
   --tertiary-color:#e8d77e;
 }
-.brand-skillsly {
+.brand-container.brand-skillsly {
   --primary-color:#2f5c43;
   --secondary-color:#cddb6c;
   --tertiary-color:#adc3f4;
 }
-.brand-sowiso {
+.brand-container.brand-sowiso {
   --primary-color:#5a4863;
   --secondary-color:#cd87a8;
   --tertiary-color:#87bcea;
 }
-:root {
-  --primary-color-light:   color-mix(in srgb, white 90%, var(--primary-color));
-  --secondary-color-light: color-mix(in srgb, white 90%, var(--secondary-color));
-  --tertiary-color-light:  color-mix(in srgb, white 90%, var(--tertiary-color));
+.brand-container {
+  --primary-color-light:   color-mix(in srgb, white 95%, var(--primary-color));
+  --secondary-color-light: color-mix(in srgb, white 95%, var(--secondary-color));
+  --tertiary-color-light:  color-mix(in srgb, white 95%, var(--tertiary-color));
 
   --primary-color-dark:   color-mix(in srgb, black 20%, var(--primary-color));
   --secondary-color-dark: color-mix(in srgb, black 20%, var(--secondary-color));
