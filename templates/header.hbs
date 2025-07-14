@@ -22,11 +22,8 @@
    <div class="header cd-header {{#is settings.container_layout 'full'}}full--width{{/is}}">
       {{!-- Logo --}}
       <div class="logo">
-         <a title="{{help_center.name}}" href="{{#if settings.enable_link}}{{settings.enable_link_url}}{{else}}{{help_center.url}}{{/if}}">
-           <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
-           {{#isnt settings.logo_tagline ''}}
-           <span aria-hidden="true">{{#if settings.translations_enable}}{{dc settings.logo_tagline}}{{else}}{{settings.logo_tagline}}{{/if}}</span>
-           {{/isnt}}
+         <a title="{{help_center.name}}" href="{{help_center.url}}">
+           <img src="{{asset 'logos/{{settings.brand_identity}}.svg'}}" alt="{{t 'home_page' name=help_center.name}}">
          </a>
       </div>
       <div class="nav-wrapper">

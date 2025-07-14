@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -29,7 +29,7 @@
             },
             {
               "label": "GradeWork",
-              "value": "gradeWork"
+              "value": "gradework"
             },
             {
               "label": "OMPT",
@@ -37,11 +37,11 @@
             },
             {
               "label": "OnStage",
-              "value": "onStage"
+              "value": "onstage"
             },
             {
               "label": "OnTrac",
-              "value": "onTrac"
+              "value": "ontrac"
             },
             {
               "label": "Remindo",
@@ -62,40 +62,6 @@
     {
       "label": "brand_group_label",
       "variables": [
-        {
-          "identifier": "logo",
-          "type": "file",
-          "description": "logo_description",
-          "label": "logo_label"
-        },
-        {
-          "identifier": "logo_height",
-          "type": "text",
-          "description": "logo_height_description",
-          "label": "logo_height_label",
-          "value": "32px"
-        },
-        {
-          "identifier": "logo_tagline",
-          "type": "text",
-          "description": "logo_tagline_description",
-          "label": "logo_tagline_label",
-          "value": ""
-        },
-        {
-          "identifier": "enable_link",
-          "type": "checkbox",
-          "description": "enable_link_description",
-          "label": "enable_link_label",
-          "value": false
-        },
-        {
-          "identifier": "enable_link_url",
-          "type": "text",
-          "description": "enable_link_url_description",
-          "label": "enable_link_url_label",
-          "value": "https://paragin.zendesk.com/hc/nl"
-        },
         {
           "identifier": "favicon",
           "type": "file",
