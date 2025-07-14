@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -240,8 +240,8 @@
           "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
           "options": [
             {
-              "label": "Montserrat (Google)",
-              "value": "'Montserrat', sans-serif"
+              "label": "Quicksand (Google)",
+              "value": "'Quicksand', sans-serif"
             },
             {
               "label": "Open Sans (Google)",
@@ -345,8 +345,8 @@
           "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
           "options": [
             {
-              "label": "Montserrat (Google)",
-              "value": "'Montserrat', sans-serif"
+              "label": "Quicksand (Google)",
+              "value": "'Quicksand', sans-serif"
             },
             {
               "label": "Open Sans (Google)",
@@ -936,6 +936,18 @@
           "description": "alert_link_url_description",
           "label": "alert_link_url_label",
           "value": "https://themes.grow-shine.com/zendesk-themes"
+        }
+      ]
+    },
+    {
+      "label": "Deprecated stuff",
+      "variables": [
+        {
+          "identifier": "brand_color",
+          "type": "color",
+          "description": "brand_color_description",
+          "label": "brand_color_label",
+          "value": "#57528d"
         }
       ]
     },
