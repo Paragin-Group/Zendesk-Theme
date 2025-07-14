@@ -11,11 +11,29 @@
   --secondary-color:#aec99b;
   --tertiary-color:#bacaee;
 
+  --primary-color-light:   color-mix(in srgb, white 90%, var(--primary-color));
+  --secondary-color-light: color-mix(in srgb, white 90%, var(--secondary-color));
+  --tertiary-color-light:  color-mix(in srgb, white 90%, var(--tertiary-color));
+
+  --primary-color-dark:   color-mix(in srgb, black 20%, var(--primary-color));
+  --secondary-color-dark: color-mix(in srgb, black 20%, var(--secondary-color));
+  --tertiary-color-dark:  color-mix(in srgb, black 20%, var(--tertiary-color));
+
   --brand-color: --primary-color;
   --text-color: #2f2f2f;
   --link-color: --primary-color;
   --brand-text-color: #fbfbfb;
   --border-color: #dddddd;
+  --submit-bg-color: --primary-color;
+  --dropdown-menu-color: --primary-color;
+  --menu-color: --primary-color;
+  --categories-bg-color: --primary-color;
+  --categories-icon-color: --primary-color;
+  --bg-color: #f7f7f7;
+  --hero-unit-bg-color:--primary-color-light;
+  --hero-unit-title-color:--primary-color;
+  --footer-color: #f7f7f7;
+  --footer-text-color: #f7f7f7;
 }
 .brand-paragin {
   --primary-color:#57528d;
@@ -796,7 +814,7 @@ h1.form-header {
 }
 
 .border-top {
-  border-top: 1px solid $menu_color;
+  border-top: 1px solid var(--menu-color);
 }
 
 .header {
@@ -818,7 +836,7 @@ h1.form-header {
 }
 
 .logo img {
-  max-height: 40px;
+  height: 40px;
 }
 
 @media (max-width: 500px) {
@@ -830,7 +848,7 @@ h1.form-header {
 
 .logo span {
   margin: 0 10px;
-  color: $menu_color;
+  color: var(--menu-color);
   vertical-align: top;
   position: relative;
   top: 5px;
@@ -869,13 +887,13 @@ h1.form-header {
 
 .nav-wrapper a {
   border: 0;
-  color: $menu_color;
+  color: var(--menu-color);
   padding: 0 10px 0 10px;
   width: auto;
 }
 
 .nav-wrapper .language-selector .dropdown-toggle {
-  color: $menu_color;
+  color: var(--menu-color);
   padding: 0 10px;
 }
 
@@ -898,7 +916,7 @@ h1.form-header {
 
 .nav-wrapper a:hover, .nav-wrapper a:focus, .nav-wrapper a:active {
   background-color: transparent;
-  color: $menu_color;
+  color: var(--menu-color);
 }
 
 .nav-wrapper a.login {
@@ -989,14 +1007,14 @@ h1.form-header {
 
 .user-info > button {
   border: 0;
-  color: $menu_color;
+  color: var(--menu-color);
   min-width: 0;
   padding: 0;
   white-space: nowrap;
 }
 
 .user-info > button:hover, .user-info > button:focus {
-  color: $menu_color;
+  color: var(--menu-color);
   background-color: transparent;
 }
 
@@ -1181,14 +1199,14 @@ h1.form-header {
 }
 
 .search input[type="search"]:focus {
-  border: 1px solid $submit_bg_color;
+  border: 1px solid var(--submit-bg-color);
 }
 
 .search input[type="search"] {
   border: 1px solid #fff;
   border-radius: $border_radius;
   box-shadow: 0 6px 19px rgb(39 49 58 / 9%);
-  color: $submit_bg_color;
+  color: var(--submit-bg-color);
   font-weight: 500;
   height: 50px;
   padding-left: 40px;
@@ -1208,7 +1226,7 @@ h1.form-header {
   height: 100%;
   align-items: center;
   display: flex;
-  color: $submit_bg_color;
+  color: var(--submit-bg-color);
   font-size: 14px;
   margin-left: 15px;
   margin-top: 1px;
@@ -1222,7 +1240,7 @@ h1.form-header {
   min-width: 100px;
   max-width: 100px;
   border-radius: 0 $border_radius $border_radius 0;
-  background: $submit_bg_color;
+  background: var(--submit-bg-color);
   color: var(--brand-text-color);
   padding: 0;
 }
@@ -1242,7 +1260,7 @@ h1.form-header {
   z-index: 1;
   width: 16px;
   height: 16px;
-  color: $submit_bg_color;
+  color: var(--submit-bg-color);
 }
 
 .breadcrumbs__block .search-icon,
@@ -1559,7 +1577,7 @@ button.clear-button {
 
 .blocks-item span.category-icon,
 .topics-item .topic-icon {
-  background: $categories_bg_color;
+  background: var(--categories-bg-color);
   height: 60px;
   width: 60px;
   display: block;
@@ -1588,7 +1606,7 @@ button.clear-button {
 
 .blocks-item span.category-icon i,
 .topics-item .topic-icon i {
-  color: $categories_icon_color;
+  color: var(--categories-icon-color);
   font-size: 1.5em;
   line-height: 60px;
 }
@@ -5306,7 +5324,7 @@ html[dir="rtl"] .notification-left-aligned {
   vertical-align: middle;
 }
 .cd-primary-nav-trigger .cd-menu-text {
-  color: $menu_color;
+  color: var(--menu-color);
   display: none;
 }
 
@@ -5330,7 +5348,7 @@ span.ml-5 {
     transform: translateX(-50%) translateY(-50%);
     width: 18px;
     height: 2px;
-    background-color: $menu_color;
+    background-color: var(--menu-color);
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -5342,7 +5360,7 @@ span.ml-5 {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: $menu_color;
+    background-color: var(--menu-color);
     right: 0;
     -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
     -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
@@ -5363,7 +5381,7 @@ span.ml-5 {
 
 .cd-primary-nav-trigger .cd-menu-icon.is-clicked::before,
 .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
-    background-color: $menu_color;
+    background-color: var(--menu-color);
 }
 
 .cd-primary-nav-trigger .cd-menu-icon.is-clicked::before {
@@ -5455,7 +5473,7 @@ span.ml-5 {
     -webkit-transition: background 0.2s;
     -moz-transition: background 0.2s;
     transition: background 0.2s;
-    color: $dropdown_menu_color;
+    color: var(--dropdown-menu-color);
 }
 .cd-primary-nav a:focus,
 .cd-primary-nav a:active {
