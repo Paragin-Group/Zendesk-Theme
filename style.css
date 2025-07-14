@@ -10,30 +10,6 @@
   --primary-color:#57528d;
   --secondary-color:#aec99b;
   --tertiary-color:#bacaee;
-
-  --primary-color-light:   color-mix(in srgb, white 90%, var(--primary-color));
-  --secondary-color-light: color-mix(in srgb, white 90%, var(--secondary-color));
-  --tertiary-color-light:  color-mix(in srgb, white 90%, var(--tertiary-color));
-
-  --primary-color-dark:   color-mix(in srgb, black 20%, var(--primary-color));
-  --secondary-color-dark: color-mix(in srgb, black 20%, var(--secondary-color));
-  --tertiary-color-dark:  color-mix(in srgb, black 20%, var(--tertiary-color));
-
-  --brand-color: var(--primary-color);
-  --text-color: #2f2f2f;
-  --link-color: var(--primary-color);
-  --brand-text-color: #fbfbfb;
-  --border-color: #dddddd;
-  --submit-bg-color: var(--primary-color);
-  --dropdown-menu-color: var(--primary-color);
-  --menu-color: var(--primary-color);
-  --categories-bg-color: var(--primary-color);
-  --categories-icon-color: #fff;
-  --bg-color: #f7f7f7;
-  --hero-unit-bg-color: var(--primary-color-light);
-  --hero-unit-title-color: var(--primary-color);
-  --footer-color: #f7f7f7;
-  --footer-text-color: #f7f7f7;
 }
 .brand-paragin {
   --primary-color:#57528d;
@@ -85,10 +61,31 @@
   --secondary-color:#cd87a8;
   --tertiary-color:#87bcea;
 }
+:root {
+  --primary-color-light:   color-mix(in srgb, white 90%, var(--primary-color));
+  --secondary-color-light: color-mix(in srgb, white 90%, var(--secondary-color));
+  --tertiary-color-light:  color-mix(in srgb, white 90%, var(--tertiary-color));
 
-/*
-background-image: url({{asset 'prev.png'}});
-*/
+  --primary-color-dark:   color-mix(in srgb, black 20%, var(--primary-color));
+  --secondary-color-dark: color-mix(in srgb, black 20%, var(--secondary-color));
+  --tertiary-color-dark:  color-mix(in srgb, black 20%, var(--tertiary-color));
+
+  --brand-color: var(--primary-color);
+  --text-color: #2f2f2f;
+  --link-color: var(--primary-color);
+  --brand-text-color: #fbfbfb;
+  --border-color: #dddddd;
+  --submit-bg-color: var(--primary-color);
+  --dropdown-menu-color: var(--primary-color);
+  --menu-color: var(--primary-color);
+  --categories-bg-color: var(--primary-color);
+  --categories-icon-color: #fff;
+  --bg-color: #f7f7f7;
+  --hero-unit-bg-color: var(--primary-color-light);
+  --hero-unit-title-color: var(--primary-color);
+  --footer-color: #f7f7f7;
+  --footer-text-color: #f7f7f7;
+}
 
 
 /***** Normalize.css *****/
