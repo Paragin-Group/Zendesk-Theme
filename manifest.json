@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -56,12 +56,7 @@
               "value": "sowiso"
             }
           ]
-        }
-      ]
-    },
-    {
-      "label": "brand_group_label",
-      "variables": [
+        },
         {
           "identifier": "favicon",
           "type": "file",
@@ -273,53 +268,6 @@
           "description": "scoped_community_search_description",
           "label": "scoped_community_search_label",
           "value": false
-        }
-      ]
-    },
-    {
-      "label": "colors_group_label",
-      "variables": [
-        {
-          "identifier": "brand_color",
-          "type": "color",
-          "description": "brand_color_description",
-          "label": "brand_color_label",
-          "value": "rgba(124, 122, 172, 1)"
-        },
-        {
-          "identifier": "text_color",
-          "type": "color",
-          "description": "text_color_description",
-          "label": "text_color_label",
-          "value": "rgba(47, 47, 47, 1)"
-        },
-        {
-          "identifier": "link_color",
-          "type": "color",
-          "description": "link_color_description",
-          "label": "link_color_label",
-          "value": "rgba(124, 122, 172, 1)"
-        },
-        {
-          "identifier": "visited_link_color",
-          "type": "color",
-          "description": "visited_link_color_description",
-          "label": "visited_link_color_label",
-          "value": "rgba(122, 36, 212, 1)"
-        },
-        {
-          "identifier": "brand_text_color",
-          "type": "color",
-          "description": "brand_text_color_description",
-          "label": "brand_text_color_label",
-          "value": "rgba(251, 251, 251, 1)"
-        },
-        {
-          "identifier": "border_color",
-          "type": "color",
-          "description": "border_color_description",
-          "label": "border_color_label",
-          "value": "#DDDDDD"
         }
       ]
     },
