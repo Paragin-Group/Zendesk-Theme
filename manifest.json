@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -62,6 +62,20 @@
           "type": "file",
           "description": "favicon_description",
           "label": "favicon_label"
+        },
+        {
+          "identifier": "hero_title",
+          "type": "text",
+          "description": "hero_title_description",
+          "label": "hero_title_label",
+          "value": "Help Center"
+        },
+        {
+          "identifier": "search_placeholder",
+          "type": "text",
+          "description": "search_placeholder_description",
+          "label": "search_placeholder_label",
+          "value": "Keywords"
         }
       ]
     },
@@ -95,20 +109,6 @@
           "description": "fixed_header_description",
           "label": "fixed_header_label",
           "value": false
-        },
-        {
-          "identifier": "menu_color",
-          "type": "color",
-          "description": "menu_color_description",
-          "label": "menu_color_label",
-          "value": "rgba(124, 122, 172, 1)"
-        },
-        {
-          "identifier": "dropdown_menu_color",
-          "type": "color",
-          "description": "dropdown_menu_color_description",
-          "label": "dropdown_menu_color_label",
-          "value": "rgba(124, 122, 172, 1)"
         },
         {
           "identifier": "custom_menu",
@@ -200,54 +200,12 @@
           "type": "file",
           "description": "homepage_background_image_description",
           "label": "homepage_background_image_label"
-        },
-        {
-          "identifier": "hero_unit_bg_color",
-          "type": "color",
-          "description": "hero_unit_bg_color_description",
-          "label": "hero_unit_bg_color_label",
-          "value": "rgba(227, 236, 247, 1)"
-        },
-        {
-          "identifier": "hero_title",
-          "type": "text",
-          "description": "hero_title_description",
-          "label": "hero_title_label",
-          "value": "Help Center"
-        },
-        {
-          "identifier": "hero_unit_title_color",
-          "type": "color",
-          "description": "hero_unit_title_color_description",
-          "label": "hero_unit_title_color_label",
-          "value": "rgba(124, 122, 172, 1)"
         }
       ]
     },
     {
       "label": "search_group_label",
       "variables": [
-        {
-          "identifier": "search_placeholder",
-          "type": "text",
-          "description": "search_placeholder_description",
-          "label": "search_placeholder_label",
-          "value": "Keywords"
-        },
-        {
-          "identifier": "submit_bg_color",
-          "type": "color",
-          "description": "submit_bg_color_description",
-          "label": "submit_bg_color_label",
-          "value": "rgba(124, 122, 172, 1)"
-        },
-        {
-          "identifier": "border_radius",
-          "type": "text",
-          "description": "border_radius_description",
-          "label": "border_radius_label",
-          "value": "10px"
-        },
         {
           "identifier": "instant_search",
           "type": "checkbox",
@@ -490,20 +448,6 @@
       "label": "home_page_first_label",
       "variables": [
         {
-          "identifier": "categories_bg_color",
-          "type": "color",
-          "description": "categories_bg_color_description",
-          "label": "categories_bg_color_label",
-          "value": "rgba(124, 122, 172, 1)"
-        },
-        {
-          "identifier": "categories_icon_color",
-          "type": "color",
-          "description": "categories_icon_color_description",
-          "label": "categories_icon_color_label",
-          "value": "rgba(255, 255, 255, 1)"
-        },
-        {
           "identifier": "category1_id",
           "type": "text",
           "description": "add_id_description",
@@ -689,20 +633,6 @@
       "label": "footer_group_label",
       "variables": [
         {
-          "identifier": "footer_color",
-          "type": "color",
-          "description": "footer_color_description",
-          "label": "footer_color_label",
-          "value": "rgba(245, 247, 250, 1)"
-        },
-        {
-          "identifier": "footer_text_color",
-          "type": "color",
-          "description": "footer_text_color_description",
-          "label": "footer_text_color_label",
-          "value": "rgba(245, 247, 250, 1)"
-        },
-        {
           "identifier": "facebook_url",
           "type": "text",
           "description": "facebook_url_description",
@@ -800,13 +730,6 @@
               "value": "no"
             }
           ]
-        },
-        {
-          "identifier": "bg_color",
-          "type": "color",
-          "description": "bg_color_description",
-          "label": "background_color_label",
-          "value": "#F7F7F7"
         },
         {
           "identifier": "show_article_author",
