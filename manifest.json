@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -213,7 +213,7 @@
           "type": "text",
           "description": "hero_title_description",
           "label": "hero_title_label",
-          "value": "Paragin Help Center"
+          "value": "Help Center"
         },
         {
           "identifier": "hero_unit_title_color",
@@ -232,7 +232,7 @@
           "type": "text",
           "description": "search_placeholder_description",
           "label": "search_placeholder_label",
-          "value": "Multiple choice, Skillsy, portfolio, Remindo..."
+          "value": "Keywords"
         },
         {
           "identifier": "submit_bg_color",
@@ -648,7 +648,7 @@
           "type": "list",
           "description": "toggle_community_block_description",
           "label": "toggle_community_block_label",
-          "value": "yes",
+          "value": "no",
           "options": [
             {
               "label": "yes_label",
