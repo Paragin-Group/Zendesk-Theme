@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -54,6 +54,55 @@
             {
               "label": "Sowiso",
               "value": "sowiso"
+            }
+          ]
+        },
+        {
+          "identifier": "brand_color",
+          "type": "list",
+          "description": "brand_color_description",
+          "label": "brand_color_label",
+          "value": "#57528d",
+          "options": [
+            {
+              "label": "Paragin",
+              "value": "#57528d"
+            },
+            {
+              "label": "B3net",
+              "value": "#ee0011"
+            },
+            {
+              "label": "Coachview",
+              "value": "#2d5d82"
+            },
+            {
+              "label": "GradeWork",
+              "value": "#77424d"
+            },
+            {
+              "label": "OMPT",
+              "value": "#036073"
+            },
+            {
+              "label": "OnStage",
+              "value": "#204a6c"
+            },
+            {
+              "label": "OnTrac",
+              "value": "#05585b"
+            },
+            {
+              "label": "Remindo",
+              "value": "#3d5a85"
+            },
+            {
+              "label": "Skillsly",
+              "value": "#2f5c43"
+            },
+            {
+              "label": "Sowiso",
+              "value": "#5a4863"
             }
           ]
         },
@@ -237,7 +286,7 @@
           "type": "list",
           "description": "heading_font_description",
           "label": "heading_font_label",
-          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+          "value": "'Quicksand', sans-serif",
           "options": [
             {
               "label": "Quicksand (Google)",
@@ -936,18 +985,6 @@
           "description": "alert_link_url_description",
           "label": "alert_link_url_label",
           "value": "https://themes.grow-shine.com/zendesk-themes"
-        }
-      ]
-    },
-    {
-      "label": "Deprecated stuff",
-      "variables": [
-        {
-          "identifier": "brand_color",
-          "type": "color",
-          "description": "brand_color_description",
-          "label": "brand_color_label",
-          "value": "#57528d"
         }
       ]
     },
