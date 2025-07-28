@@ -62,6 +62,12 @@
   --secondary-color:#cd87a8;
   --tertiary-color:#87bcea;
 }
+.brand-container.brand-paraginintegrations {
+  --primary-color:#57528d;
+  --secondary-color:#aec99b;
+  --tertiary-color:#bacaee;
+}
+
 .brand-container {
   --primary-color-light:   color-mix(in srgb, white 95%, var(--primary-color));
   --secondary-color-light: color-mix(in srgb, white 95%, var(--secondary-color));

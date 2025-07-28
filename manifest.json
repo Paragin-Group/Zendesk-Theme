@@ -54,6 +54,10 @@
             {
               "label": "Sowiso",
               "value": "sowiso"
+            },
+            {
+              "label": "Paragin Integrations",
+              "value": "paraginintegrations"
             }
           ]
         },
@@ -103,6 +107,10 @@
             {
               "label": "Sowiso",
               "value": "#5a4863"
+            },
+            {
+              "label": "Paragin Integrations",
+              "value": "#57528d"
             }
           ]
         },
