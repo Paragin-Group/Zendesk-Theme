@@ -6313,7 +6313,7 @@ b, strong {
 .article-body table {
   border-collapse: collapse;
   border-spacing: 0;
-  display: block;
+  display: table;
   margin-bottom: 1em;
   margin-top: 1em;
   max-width: 100%;
