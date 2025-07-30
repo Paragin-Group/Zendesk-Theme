@@ -1683,14 +1683,15 @@ button.clear-button {
 
 .promoted-articles-item {
   flex: 1 0 auto;
+  width:100%;
 }
 
 @media (min-width: 1024px) {
   .promoted-articles-item {
-    align-self: flex-end;
+    align-self: flex-start;
     flex: 0 0 auto;
-    padding-right: 0;
-    width: 100%;
+    width: calc(100%/3);
+    padding:0.5em;
     /* Three columns on desktop */
   }
   [dir="rtl"] .promoted-articles-item {
@@ -1708,6 +1709,13 @@ button.clear-button {
   border-bottom: 1px solid var(--border-color);
   padding: 15px 0;
   color: var(--link-color);
+}
+
+@media (min-width: 1024px) {
+  .promoted-articles-item a {
+    border:none;
+    padding:0;
+  }
 }
 
 .quick-articles li a,
