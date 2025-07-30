@@ -14,6 +14,23 @@
     <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
     <section class="categories blocks">
 
+      {{#if settings.enable_helpcentertiles}}
+        <ul class="blocks-list helpcenter-tiles">
+            <li class="blocks-item">
+              <a href="https://support.remindo.com" class="blocks-item-link tile-remindo">
+                <span class="category-icon" style="background: #fff url(https://assets.paragin.com/products/icon-remindo-transparent.png) no-repeat 100%/100%;">&nbsp;</span>
+                <span class="blocks-item-title element-fade animate__animated animate__fadeInUp">Remindo</span>
+              </a>
+            </li>
+            <li class="blocks-item">
+              <a href="https://support.skillsly.com" class="blocks-item-link tile-skillsly">
+                <span class="category-icon" style="background: #fff url(https://assets.paragin.com/products/icon-skillsly-transparent.png) no-repeat 100%/100%;">&nbsp;</span>
+                <span class="blocks-item-title element-fade animate__animated animate__fadeInUp">Skillsly</span>
+              </a>
+            </li>
+        </ul>
+      {{/if}}
+
       {{!-- Categories blocks --}}
       <ul class="blocks-list">
         {{#each categories}}
