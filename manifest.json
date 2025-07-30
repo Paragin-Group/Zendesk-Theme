@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -642,6 +642,48 @@
           "type": "text",
           "description": "add_icon_description",
           "label": "category10_icon_label",
+          "value": "fa-solid fa-credit-card"
+        },
+        {
+          "identifier": "category11_id",
+          "type": "text",
+          "description": "add_id_description",
+          "label": "category11_id_label",
+          "value": "YOUR-CAT-ID"
+        },
+        {
+          "identifier": "category11_icon",
+          "type": "text",
+          "description": "add_icon_description",
+          "label": "category11_icon_label",
+          "value": "fa-solid fa-credit-card"
+        },
+        {
+          "identifier": "category12_id",
+          "type": "text",
+          "description": "add_id_description",
+          "label": "category12_id_label",
+          "value": "YOUR-CAT-ID"
+        },
+        {
+          "identifier": "category12_icon",
+          "type": "text",
+          "description": "add_icon_description",
+          "label": "category12_icon_label",
+          "value": "fa-solid fa-credit-card"
+        },
+        {
+          "identifier": "category13_id",
+          "type": "text",
+          "description": "add_id_description",
+          "label": "category13_id_label",
+          "value": "YOUR-CAT-ID"
+        },
+        {
+          "identifier": "category13_icon",
+          "type": "text",
+          "description": "add_icon_description",
+          "label": "category13_icon_label",
           "value": "fa-solid fa-credit-card"
         }
       ]
