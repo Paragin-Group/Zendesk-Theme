@@ -1712,7 +1712,7 @@ button.clear-button {
 }
 
 @media (min-width: 1024px) {
-  .promoted-articles-item a {
+  .promoted-articles-item a, .quick-articles li a {
     border:none;
     padding:0;
   }

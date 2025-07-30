@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -507,84 +507,72 @@
         {
           "identifier": "category1_id",
           "type": "text",
-          "description": "add_id_description",
           "label": "category1_id_label",
           "value": "4404581274385"
         },
         {
           "identifier": "category1_icon",
           "type": "text",
-          "description": "add_icon_description",
           "label": "category1_icon_label",
           "value": "fa-solid fa-rocket"
         },
         {
           "identifier": "category2_id",
           "type": "text",
-          "description": "add_id_description",
           "label": "category2_id_label",
           "value": "YOUR-CAT-ID"
         },
         {
           "identifier": "category2_icon",
           "type": "text",
-          "description": "add_icon_description",
           "label": "category2_icon_label",
           "value": "fa-solid fa-play"
         },
         {
           "identifier": "category3_id",
           "type": "text",
-          "description": "add_id_description",
           "label": "category3_id_label",
           "value": "YOUR-CAT-ID"
         },
         {
           "identifier": "category3_icon",
           "type": "text",
-          "description": "add_icon_description",
           "label": "category3_icon_label",
           "value": "fa-solid fa-gear"
         },
         {
           "identifier": "category4_id",
           "type": "text",
-          "description": "add_id_description",
           "label": "category4_id_label",
           "value": "YOUR-CAT-ID"
         },
         {
           "identifier": "category4_icon",
           "type": "text",
-          "description": "add_icon_description",
           "label": "category4_icon_label",
           "value": "fa-solid fa-dollar-sign"
         },
         {
           "identifier": "category5_id",
           "type": "text",
-          "description": "add_id_description",
           "label": "category5_id_label",
           "value": "YOUR-CAT-ID"
         },
         {
           "identifier": "category5_icon",
           "type": "text",
-          "description": "add_icon_description",
           "label": "category5_icon_label",
           "value": "fa-solid fa-basket-shopping"
         },
         {
           "identifier": "category6_id",
           "type": "text",
-          "description": "add_id_description",
           "label": "category6_id_label",
           "value": "YOUR-CAT-ID"
         },
         {
           "identifier": "category6_icon",
           "type": "text",
-          "description": "add_icon_description",
           "label": "category6_icon_label",
           "value": "fa-solid fa-credit-card"
         }
