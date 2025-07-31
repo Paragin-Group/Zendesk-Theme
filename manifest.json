@@ -747,7 +747,7 @@
           "value": false
         },
         {
-          "identifier": "enable_tile_paraginintegrations",
+          "identifier": "enable_tile_integrations",
           "type": "checkbox",
           "description": "Enable Paragin Integrations",
           "label": "Toggle tile",
