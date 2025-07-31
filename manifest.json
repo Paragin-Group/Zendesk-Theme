@@ -705,7 +705,7 @@
           "value": false
         },
         {
-          "identifier": "enable_rtile_b3net",
+          "identifier": "enable_tile_b3net",
           "type": "checkbox",
           "description": "Enable B3net",
           "label": "Toggle tile",
