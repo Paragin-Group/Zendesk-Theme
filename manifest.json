@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -695,7 +695,7 @@
       ]
     },
     {
-      "label": "home_page_group_label",
+      "label": "Home page tiles",
       "variables": [
         {
           "identifier": "enable_helpcentertiles",
@@ -704,6 +704,81 @@
           "label": "Show Big Help Center tiles",
           "value": false
         },
+        {
+          "identifier": "enable_helpcentertile_b3net",
+          "type": "checkbox",
+          "description": "Enable B3net",
+          "label": "Toggle tile",
+          "value": false
+        },
+        {
+          "identifier": "enable_helpcentertile_coachview",
+          "type": "checkbox",
+          "description": "Enable Coachview",
+          "label": "Toggle tile",
+          "value": false
+        },
+        {
+          "identifier": "enable_helpcentertile_gradework",
+          "type": "checkbox",
+          "description": "Enable Gradework",
+          "label": "Toggle tile",
+          "value": false
+        },
+        {
+          "identifier": "enable_helpcentertile_ompt",
+          "type": "checkbox",
+          "description": "Enable OMPT",
+          "label": "Toggle tile",
+          "value": false
+        },
+        {
+          "identifier": "enable_helpcentertile_onstage",
+          "type": "checkbox",
+          "description": "Enable OnStage",
+          "label": "Toggle tile",
+          "value": false
+        },
+        {
+          "identifier": "enable_helpcentertile_ontrac",
+          "type": "checkbox",
+          "description": "Enable OnTrac",
+          "label": "Toggle tile",
+          "value": false
+        },
+        {
+          "identifier": "enable_helpcentertile_paraginintegrations",
+          "type": "checkbox",
+          "description": "Enable Paragin Integrations",
+          "label": "Toggle tile",
+          "value": false
+        },
+        {
+          "identifier": "enable_helpcentertile_remindo",
+          "type": "checkbox",
+          "description": "Enable Remindo",
+          "label": "Toggle tile",
+          "value": false
+        },
+        {
+          "identifier": "enable_helpcentertile_skillsly",
+          "type": "checkbox",
+          "description": "Enable Skillsly",
+          "label": "Toggle tile",
+          "value": false
+        },
+        {
+          "identifier": "enable_helpcentertile_sowiso",
+          "type": "checkbox",
+          "description": "Enable Sowiso",
+          "label": "Toggle tile",
+          "value": false
+        }
+      ]
+    },
+    {
+      "label": "home_page_group_label",
+      "variables": [
         {
           "identifier": "toggle_promoted_articles",
           "type": "list",
