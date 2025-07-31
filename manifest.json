@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.4.2",
+  "version": "0.4.4",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -113,6 +113,12 @@
               "value": "#57528d"
             }
           ]
+        },
+        {
+          "identifier": "logo",
+          "type": "file",
+          "description": "logo_description",
+          "label": "logo_label"
         },
         {
           "identifier": "favicon",
