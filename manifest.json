@@ -707,71 +707,71 @@
         {
           "identifier": "enable_tile_b3net",
           "type": "checkbox",
-          "description": "Enable B3net",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable B3net",
           "value": false
         },
         {
           "identifier": "enable_tile_coachview",
           "type": "checkbox",
-          "description": "Enable Coachview",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable Coachview",
           "value": false
         },
         {
           "identifier": "enable_tile_gradework",
           "type": "checkbox",
-          "description": "Enable Gradework",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable Gradework",
           "value": false
         },
         {
           "identifier": "enable_tile_ompt",
           "type": "checkbox",
-          "description": "Enable OMPT",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable OMPT",
           "value": false
         },
         {
           "identifier": "enable_tile_onstage",
           "type": "checkbox",
-          "description": "Enable OnStage",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable OnStage",
           "value": false
         },
         {
           "identifier": "enable_tile_ontrac",
           "type": "checkbox",
-          "description": "Enable OnTrac",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable OnTrac",
           "value": false
         },
         {
           "identifier": "enable_tile_integrations",
           "type": "checkbox",
-          "description": "Enable Paragin Integrations",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable Paragin Integrations",
           "value": false
         },
         {
           "identifier": "enable_tile_remindo",
           "type": "checkbox",
-          "description": "Enable Remindo",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable Remindo",
           "value": false
         },
         {
           "identifier": "enable_tile_skillsly",
           "type": "checkbox",
-          "description": "Enable Skillsly",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable Skillsly",
           "value": false
         },
         {
           "identifier": "enable_tile_sowiso",
           "type": "checkbox",
-          "description": "Enable Sowiso",
-          "label": "Toggle tile",
+          "description": "Toggle tile",
+          "label": "Enable Sowiso",
           "value": false
         }
       ]
