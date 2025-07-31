@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -698,77 +698,77 @@
       "label": "Home page tiles",
       "variables": [
         {
-          "identifier": "enable_helpcentertiles",
+          "identifier": "enable_tiles",
           "type": "checkbox",
           "description": "Enable only in Main environment",
           "label": "Show Big Help Center tiles",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_b3net",
+          "identifier": "enable_rtile_b3net",
           "type": "checkbox",
           "description": "Enable B3net",
           "label": "Toggle tile",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_coachview",
+          "identifier": "enable_tile_coachview",
           "type": "checkbox",
           "description": "Enable Coachview",
           "label": "Toggle tile",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_gradework",
+          "identifier": "enable_tile_gradework",
           "type": "checkbox",
           "description": "Enable Gradework",
           "label": "Toggle tile",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_ompt",
+          "identifier": "enable_tile_ompt",
           "type": "checkbox",
           "description": "Enable OMPT",
           "label": "Toggle tile",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_onstage",
+          "identifier": "enable_tile_onstage",
           "type": "checkbox",
           "description": "Enable OnStage",
           "label": "Toggle tile",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_ontrac",
+          "identifier": "enable_tile_ontrac",
           "type": "checkbox",
           "description": "Enable OnTrac",
           "label": "Toggle tile",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_paraginintegrations",
+          "identifier": "enable_tile_paraginintegrations",
           "type": "checkbox",
           "description": "Enable Paragin Integrations",
           "label": "Toggle tile",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_remindo",
+          "identifier": "enable_tile_remindo",
           "type": "checkbox",
           "description": "Enable Remindo",
           "label": "Toggle tile",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_skillsly",
+          "identifier": "enable_tile_skillsly",
           "type": "checkbox",
           "description": "Enable Skillsly",
           "label": "Toggle tile",
           "value": false
         },
         {
-          "identifier": "enable_helpcentertile_sowiso",
+          "identifier": "enable_tile_sowiso",
           "type": "checkbox",
           "description": "Enable Sowiso",
           "label": "Toggle tile",
