@@ -1,6 +1,6 @@
 {{!-- Breadcrumbs section --}}
 <section class="breadcrumbs__block">
-  <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+  <div class="container">
     <nav class="sub-nav">
       {{breadcrumbs}}
       <div class="search-container">
@@ -15,7 +15,7 @@
   </div>
 </section>
 
-<div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+<div class="container">
 
   <div class="search-results">
 
@@ -127,7 +127,7 @@
           <h3 class="collapsible-sidebar-title sidenav-title">{{t 'filter_content_tag'}}</h3>
           <ul class="multibrand-filter-list multibrand-filter-list--collapsed">
             {{#each content_tag_filters}}
-            	{{#if selected}}
+                {{#if selected}}
                 <li class="sidenav-tag">
                   <div class="content-tag">
                     <span class="label">{{name}}</span>

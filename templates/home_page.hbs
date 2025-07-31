@@ -1,15 +1,15 @@
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 {{!-- Hero block --}}
 <section id="main-content" class="section hero {{#is settings.hero_show_image 'yes'}}hero_show{{/is}} {{#is settings.hero_show_image 'no'}}border-top{{/is}}">
-  <div class="hero-inner {{#is settings.container_layout 'full'}}wide--search{{/is}}">
+  <div class="hero-inner">
     <h2 class="visibility-hidden">{{ t 'search' }}</h2>
-    <h1 class="welcome_text element-fade animate__animated">{{#if settings.translations_enable}}{{dc settings.hero_title}}{{else}}{{settings.hero_title}}{{/if}}</h1>
+    <h1 class="welcome_text element-fade animate__animated">{{settings.hero_title}}</h1>
     {{!-- Search bar --}}
     {{search instant=settings.instant_search class='search search-full' placeholder=settings.search_placeholder}}
   </div>
 </section>
 
-<div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+<div class="container">
   <section class="section knowledge-base">
     <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
     <section class="categories blocks">
@@ -82,8 +82,8 @@
                 <span class="category-icon" id="category--{{id}}"><i class="fa-solid fa-book-open-reader"></i></span>
                 {{!--
                 <span class="category-icon">
-							    <img src="{{asset id prefix='category-' suffix='.svg'}}"/>
-								</span>
+                                <img src="{{asset id prefix='category-' suffix='.svg'}}"/>
+                                </span>
                 --}}
                 <span class="blocks-item-title element-fade animate__animated">{{name}}</span>
                 {{!--
@@ -98,8 +98,8 @@
                   <span class="category-icon" id="category--{{id}}"><i class="fa-solid fa-book-open-reader"></i></span>
                   {{!--
                   <span class="category-icon">
-									  <img src="{{asset id prefix='category-' suffix='.svg'}}"/>
-								  </span>
+                                      <img src="{{asset id prefix='category-' suffix='.svg'}}"/>
+                                  </span>
                   --}}
                   <span class="blocks-item-title element-fade animate__animated">
                     {{name}}
@@ -154,7 +154,7 @@
 {{!-- Community button block --}}
 {{#is settings.toggle_community_block "yes"}}
 <section class="submit-request-section community-image text-center">
-   <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+   <div class="container">
       {{link 'community' class='btn btn-lg element-fade animate__animated'}}
       {{link 'new_request' class='submit-a-request btn btn-lg element-fade animate__animated'}}
    </div>
@@ -163,7 +163,7 @@
 
 {{!-- Recent activity block --}}
 {{#is settings.toggle_recent_activity "yes"}}
-<div class="container element-fade animate__animated {{#is settings.container_layout 'full'}}full--width{{/is}}">
+<div class="container element-fade animate__animated">
   <section class="section home-section activity pt-80 mb-30 {{#is settings.toggle_community_block "no"}}pt-0{{/is}}">
     {{recent_activity}}
   </section>

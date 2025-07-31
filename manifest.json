@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -792,88 +792,6 @@
       ]
     },
     {
-      "label": "footer_group_label",
-      "variables": [
-        {
-          "identifier": "facebook_url",
-          "type": "text",
-          "description": "facebook_url_description",
-          "label": "Facebook",
-          "value": "-"
-        },
-        {
-          "identifier": "twitter_url",
-          "type": "text",
-          "description": "twitter_url_description",
-          "label": "X (Twitter)",
-          "value": "-"
-        },
-        {
-          "identifier": "linkedin_url",
-          "type": "text",
-          "description": "linkedin_url_description",
-          "label": "LinkedIn",
-          "value": "-"
-        },
-        {
-          "identifier": "pinterest_url",
-          "type": "text",
-          "description": "pinterest_url_description",
-          "label": "Pinterest",
-          "value": "-"
-        },
-        {
-          "identifier": "instagram_url",
-          "type": "text",
-          "description": "instagram_url_description",
-          "label": "Instagram",
-          "value": "-"
-        },
-        {
-          "identifier": "youtube_url",
-          "type": "text",
-          "description": "youtube_url_description",
-          "label": "YouTube",
-          "value": "-"
-        },
-        {
-          "identifier": "github_url",
-          "type": "text",
-          "description": "github_url_description",
-          "label": "GitHub",
-          "value": "-"
-        },
-        {
-          "identifier": "tiktok_url",
-          "type": "text",
-          "description": "dropdown1_description",
-          "label": "TikTok",
-          "value": "-"
-        },
-        {
-          "identifier": "threads_url",
-          "type": "text",
-          "description": "dropdown1_description",
-          "label": "Threads",
-          "value": "-"
-        },
-        {
-          "identifier": "medium_url",
-          "type": "text",
-          "description": "dropdown1_description",
-          "label": "Medium",
-          "value": "-"
-        },
-        {
-          "identifier": "copyright_text",
-          "type": "text",
-          "description": "copyright_text_description",
-          "label": "copyright_text_label",
-          "value": "2024 Footer text here"
-        }
-      ]
-    },
-    {
       "label": "article_page_group_label",
       "variables": [
         {
@@ -1033,28 +951,6 @@
       ]
     },
     {
-      "label": "help_center_label",
-      "variables": [
-        {
-          "identifier": "container_layout",
-          "type": "list",
-          "description": "container_layout_description",
-          "label": "container_layout_label",
-          "value": "boxed",
-          "options": [
-            {
-              "label": "full_label",
-              "value": "full"
-            },
-            {
-              "label": "boxed_label",
-              "value": "boxed"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "label": "alert_bar_group_label",
       "variables": [
         {
@@ -1098,18 +994,6 @@
           "description": "alert_link_url_description",
           "label": "alert_link_url_label",
           "value": "https://themes.grow-shine.com/zendesk-themes"
-        }
-      ]
-    },
-    {
-      "label": "translations_label",
-      "variables": [
-        {
-          "identifier": "translations_enable",
-          "type": "checkbox",
-          "description": "translations_enable_description",
-          "label": "translations_enable_label",
-          "value": false
         }
       ]
     }

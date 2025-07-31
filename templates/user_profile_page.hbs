@@ -1,5 +1,5 @@
 <header id="main-content" class="profile-header">
-  <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+  <div class="container">
     <div class="profile-info">
       <div class="avatar profile-avatar">
         {{#if user.agent}}
@@ -128,7 +128,7 @@
   {{#if member_since}}
 
     <div class="profile-nav">
-      <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+      <div class="container">
         <nav class="collapsible-nav">
           <button type="button" class="collapsible-nav-toggle" aria-label="{{t 'toggle_navigation'}}" aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12" aria-hidden="true" class="collapsible-nav-toggle-icon chevron-icon">
@@ -152,7 +152,7 @@
     </div>
 
     {{#is current_filter.identifier 'activities'}}
-      <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+      <div class="container">
         <section class="profile-section">
 
           {{#if activities}}
@@ -257,7 +257,7 @@
     {{/is}}
 
     {{#is current_filter.identifier 'badges'}}
-      <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+      <div class="container">
         <section class="profile-section">
 
           {{#if user.badges}}
@@ -303,7 +303,7 @@
 
     {{#isnt current_filter.identifier 'activities'}}
       {{#isnt current_filter.identifier 'badges'}}
-        <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+        <div class="container">
           <section class="profile-section">
 
             {{#if contributions}}
@@ -421,7 +421,7 @@
   {{/if}}
 
   {{#unless member_since}}
-    <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+    <div class="container">
       <section class="profile-section">
         <span class="no-activity">{{t 'no_content_yet'}}</span>
       </section>
@@ -431,7 +431,7 @@
 {{/if}}
 
 {{#unless visible}}
-  <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+  <div class="container">
     <section class="profile-section">
       <span class="private-activity">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="private-activity-icon">

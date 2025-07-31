@@ -705,11 +705,7 @@ jQuery(document).ready(function($){
      else sticky.removeClass('scroll--fixed');
   });
 
-  // Copyright
-  $(".attribution").text("Grow Shine Services Pvt. Ltd.").attr("href", "https://themes.grow-shine.com").attr('target','_blank');
-  $(".reserved").text("All Rights Reserved.");
-
-  // Function of set year
+    // Function of set year
   var x = new Date();
   var y = x.getFullYear();
   $('#year').html(y);

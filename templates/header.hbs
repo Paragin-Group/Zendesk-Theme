@@ -6,8 +6,8 @@
 {{!-- Alert bar --}}
 {{#if settings.alert_bar}}
 <div class="alert--bar {{#if settings.fixed_header}}height-42{{/if}}">
-  <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
-  	{{#if settings.translations_enable}}{{dc settings.alert_text}}{{else}}{{settings.alert_text}}{{/if}} <a href="{{#if settings.translations_enable}}{{dc settings.alert_link_url}}{{else}}{{settings.alert_link_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.alert_link_text}}{{else}}{{settings.alert_link_text}}{{/if}}</a>
+  <div class="container">
+    {{settings.alert_text}} <a href="{{settings.alert_link_url}}">{{settings.alert_link_text}}</a>
   </div>
 </div>
 {{/if}}
@@ -19,7 +19,7 @@
 
 {{!-- Hero block --}}
 <header class="hc_header {{#if settings.fixed_header}}fixed--header{{/if}} {{#if settings.alert_bar}}top-42{{/if}}">
-   <div class="header cd-header {{#is settings.container_layout 'full'}}full--width{{/is}}">
+   <div class="header cd-header">
       {{!-- Logo --}}
       <div class="logo">
          <a title="{{help_center.name}}" href="{{help_center.url}}">
@@ -89,7 +89,7 @@
          {{/if}}
          {{#isnt settings.custom_menu '-'}}
          <a class="cd-primary-nav-trigger" href="#">
-           {{#isnt settings.custom_menu ''}}<span class="cd-menu-text">{{#if settings.translations_enable}}{{dc settings.custom_menu}}{{else}}{{settings.custom_menu}}{{/if}}</span>{{/isnt}}<span class="cd-menu-icon {{#is settings.custom_menu ''}}ml-5{{/is}}"></span>
+           {{#isnt settings.custom_menu ''}}<span class="cd-menu-text">{{settings.custom_menu}}</span>{{/isnt}}<span class="cd-menu-icon {{#is settings.custom_menu ''}}ml-5{{/is}}"></span>
          </a>
          {{/isnt}}
       </div>
@@ -99,16 +99,16 @@
 <nav class="dropdown--links">
    <ul class="cd-primary-nav">
       {{#isnt settings.dropdown1 '-'}}
-      <li><a href="{{#if settings.translations_enable}}{{dc settings.dropdown1_url}}{{else}}{{settings.dropdown1_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.dropdown1}}{{else}}{{settings.dropdown1}}{{/if}}</a></li>
+      <li><a href="{{settings.dropdown1_url}}">{{settings.dropdown1}}</a></li>
       {{/isnt}}
       {{#isnt settings.dropdown2 '-'}}
-      <li><a href="{{#if settings.translations_enable}}{{dc settings.dropdown2_url}}{{else}}{{settings.dropdown2_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.dropdown2}}{{else}}{{settings.dropdown2}}{{/if}}</a></li>
+      <li><a href="{{settings.dropdown2_url}}">{{settings.dropdown2}}</a></li>
       {{/isnt}}
       {{#isnt settings.dropdown3 '-'}}
-      <li><a href="{{#if settings.translations_enable}}{{dc settings.dropdown3_url}}{{else}}{{settings.dropdown3_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.dropdown3}}{{else}}{{settings.dropdown3}}{{/if}}</a></li>
+      <li><a href="{{settings.dropdown3_url}}">{{settings.dropdown3}}</a></li>
       {{/isnt}}
       {{#isnt settings.dropdown4 '-'}}
-      <li><a href="{{#if settings.translations_enable}}{{dc settings.dropdown4_url}}{{else}}{{settings.dropdown4_url}}{{/if}}">{{#if settings.translations_enable}}{{dc settings.dropdown4}}{{else}}{{settings.dropdown4}}{{/if}}</a></li>
+      <li><a href="{{settings.dropdown4_url}}">{{settings.dropdown4}}</a></li>
       {{/isnt}}
       {{#if settings.enable_community}}
       <li class="visible_xs">{{link 'community'}}</li>

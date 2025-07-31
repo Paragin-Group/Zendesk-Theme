@@ -1,6 +1,6 @@
 {{!-- Breadcrumbs section --}}
 <section class="breadcrumbs__block">
-  <div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+  <div class="container">
     <nav class="sub-nav">
       {{breadcrumbs}}
       <div class="search-container">
@@ -15,10 +15,10 @@
   </div>
 </section>
 
-<div class="container {{#is settings.container_layout 'full'}}full--width{{/is}}">
+<div class="container">
   {{#if settings.support_message}}
   {{#isnt settings.support_message_text ''}}
-  <p class="support--message">{{#if settings.translations_enable}}{{dc settings.support_message_text}}{{else}}{{settings.support_message_text}}{{/if}}</p>
+  <p class="support--message">{{settings.support_message_text}}</p>
   {{/isnt}}
   {{/if}}
   {{!-- Title --}}
