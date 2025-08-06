@@ -6248,6 +6248,7 @@ body .accordion_title.open {
   width: 100%;
   background-color: var(--brand-color);
   border-radius: 5px;
+  margin-bottom:1em;
 }
 
 ul#tabs-nav {
