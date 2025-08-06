@@ -6333,6 +6333,7 @@ b, strong {
 }
 .article-body th {
     background:#f5f5f5;
+    font-weight: 500;
 }
 .article-body th, .article-body td {
     border:1px solid #eaeaea;
