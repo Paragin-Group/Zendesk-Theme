@@ -6199,7 +6199,7 @@ body .number--list > li:before {
 }
 
 body .accordion_title {
-  background: #ffffff;
+  background: var(--primary-color-light);
   border: 2px solid #dddddd;
   color: var(--text-color);
   cursor: pointer;
@@ -6403,4 +6403,15 @@ body .warning--message a, body .warning--message a:hover {
 /* Custom styles */
 figure.wysiwyg-media {
   margin-bottom:1em;
+}
+details {
+  margin-bottom: 1em;
+}
+details summary>* {
+  display: inline;
+  cursor: pointer;
+  vertical-align: middle;
+}
+details summary+div {
+  margin:0 0 1em 16px;
 }
