@@ -6398,3 +6398,7 @@ body .warning--message a, body .warning--message a:hover {
     border:2px solid #fff;
 }
 
+/* Custom styles */
+figure.wysiwyg-media {
+  margin-bottom:1em;
+}
