@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -125,13 +125,6 @@
           "type": "file",
           "description": "favicon_description",
           "label": "favicon_label"
-        },
-        {
-          "identifier": "hero_title",
-          "type": "text",
-          "description": "hero_title_description",
-          "label": "hero_title_label",
-          "value": "Help Center"
         },
         {
           "identifier": "search_placeholder",
