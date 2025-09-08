@@ -743,4 +743,10 @@ jQuery(document).ready(function ($) {
         }
     }
 
+    //Remove kennisbank / Knowledge base from breadcrumbs
+    var bcText = document.querySelector(".breadcrumbs li:nth-child(1)");
+    if (bcText) {
+        bcText.innerText = bcText.innerText.replace(/(Knowledge base|Kennisbank)/g, '').trim();
+    }
+
 });
