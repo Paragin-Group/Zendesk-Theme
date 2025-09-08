@@ -6441,6 +6441,16 @@ b, strong {
     padding: .5em;
 }
 
+.article-body table[style*="border-style:none"] td, .article-body table[style*="border-style: none"] td {
+    border:none;
+}
+.article-body td>*:first-child {
+    margin-top:0;
+}
+.article-body td>*:last-child {
+    margin-bottom:0;
+}
+
 body .note--message::before, body .warning--message::before, body .quote--message::before, body .support--message::before {
     display: none;
 }
