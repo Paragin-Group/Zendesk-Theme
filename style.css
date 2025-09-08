@@ -2282,6 +2282,13 @@ button.clear-button {
     overflow: auto;
     white-space: pre;
 }
+.article-body pre code {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
 
 .article-body blockquote {
     border-left: 1px solid #ddd;
