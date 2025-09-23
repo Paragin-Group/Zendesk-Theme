@@ -40,6 +40,7 @@
                 <ul class="blocks-list helpcenter-tiles">
                 {{#if settings.enable_tile_remindo}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_remindo "!=" "")}}<a href="{{settings.releasenotes_remindo}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.remindo.com/hc" class="blocks-item-link tile-remindo">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-remindo-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">Remindo</span>
@@ -48,6 +49,7 @@
                 {{/if}}
                 {{#if settings.enable_tile_skillsly}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_skillsly "!=" "")}}<a href="{{settings.releasenotes_skillsly}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.skillsly.com/hc" class="blocks-item-link tile-skillsly">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-skillsly-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">Skillsly</span>
@@ -56,6 +58,7 @@
                     {{/if}}
                 {{#if settings.enable_tile_gradework}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_gradework "!=" "")}}<a href="{{settings.releasenotes_gradework}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.gradework.com/hc" class="blocks-item-link tile-gradework">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-gradework-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">GradeWork</span>
@@ -64,6 +67,7 @@
                 {{/if}}
                 {{#if settings.enable_tile_onstage}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_onstage "!=" "")}}<a href="{{settings.releasenotes_onstage}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.onstagesoftware.com/hc" class="blocks-item-link tile-onstage">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-onstage-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">OnStage</span>
@@ -72,6 +76,7 @@
                 {{/if}}
                 {{#if settings.enable_tile_ontrac}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_ontrac "!=" "")}}<a href="{{settings.releasenotes_ontrac}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.ontracsoftware.com/hc" class="blocks-item-link tile-ontrac">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-ontrac-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">OnTrac</span>
@@ -80,6 +85,7 @@
                 {{/if}}
                 {{#if settings.enable_tile_ompt}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_ompt "!=" "")}}<a href="{{settings.releasenotes_ompt}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.omptest.com/hc" class="blocks-item-link tile-ompt">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-ompt-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">OMPT</span>
@@ -88,6 +94,7 @@
                 {{/if}}
                 {{#if settings.enable_tile_sowiso}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_sowiso "!=" "")}}<a href="{{settings.releasenotes_sowiso}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.sowiso.com/hc" class="blocks-item-link tile-sowiso">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-sowiso-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">Sowiso</span>
@@ -96,6 +103,7 @@
                 {{/if}}
                 {{#if settings.enable_tile_coachview}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_coachview "!=" "")}}<a href="{{settings.releasenotes_coachview}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.coachview.com/hc" class="blocks-item-link tile-coachview">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-coachview-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">Coachview</span>
@@ -104,6 +112,7 @@
                 {{/if}}
                 {{#if settings.enable_tile_integrations}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_integrations "!=" "")}}<a href="{{settings.releasenotes_integrations}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://integrations.paragin.com/hc" class="blocks-item-link tile-paraginintegrations">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-paraginintegrations-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">Integrations</span>
@@ -112,6 +121,7 @@
                 {{/if}}
                 {{#if settings.enable_tile_b3net}}
                     <li class="blocks-item">
+                        {{#if (compare settings.releasenotes_b3net "!=" "")}}<a href="{{settings.releasenotes_b3net}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.b3net.nl/hc" class="blocks-item-link tile-b3net">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-b3net-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">B3net</span>

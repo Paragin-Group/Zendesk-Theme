@@ -1467,6 +1467,7 @@ button.clear-button {
 
 .blocks-item,
 .quick-articles section {
+    position:relative;
     background: #fff;
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -1527,6 +1528,21 @@ button.clear-button {
 .blocks-item-internal a {
     color: var(--text-color);
 }
+
+.blocks-item-releasenotes {
+    position: absolute;
+    z-index: 1000;
+    top: -25px;
+    right: 0;
+    color: #aaa;
+}
+.blocks-item-releasenotes:hover {
+    color: #aaa;
+}
+.blocks-item-releasenotes span {
+    margin-right: 5px;
+}
+
 
 .blocks-item-link {
     background: #fff;

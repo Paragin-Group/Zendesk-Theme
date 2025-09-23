@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -705,6 +705,13 @@
           "value": false
         },
         {
+          "identifier": "releasenotes_b3net",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes B3net",
+          "value": ""
+        },
+        {
           "identifier": "enable_tile_coachview",
           "type": "checkbox",
           "description": "Toggle tile",
@@ -712,11 +719,25 @@
           "value": false
         },
         {
+          "identifier": "releasenotes_coachview",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes Coachview",
+          "value": ""
+        },
+        {
           "identifier": "enable_tile_gradework",
           "type": "checkbox",
           "description": "Toggle tile",
-          "label": "Enable Gradework",
+          "label": "Enable GradeWork",
           "value": false
+        },
+        {
+          "identifier": "releasenotes_gradework",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes GradeWork",
+          "value": ""
         },
         {
           "identifier": "enable_tile_ompt",
@@ -726,11 +747,25 @@
           "value": false
         },
         {
+          "identifier": "releasenotes_ompt",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes OMPT",
+          "value": ""
+        },
+        {
           "identifier": "enable_tile_onstage",
           "type": "checkbox",
           "description": "Toggle tile",
           "label": "Enable OnStage",
           "value": false
+        },
+        {
+          "identifier": "releasenotes_onstage",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes OnStage",
+          "value": ""
         },
         {
           "identifier": "enable_tile_ontrac",
@@ -740,11 +775,25 @@
           "value": false
         },
         {
+          "identifier": "releasenotes_ontrac",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes OnTrac",
+          "value": ""
+        },
+        {
           "identifier": "enable_tile_integrations",
           "type": "checkbox",
           "description": "Toggle tile",
           "label": "Enable Paragin Integrations",
           "value": false
+        },
+        {
+          "identifier": "releasenotes_integrations",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes Integrations",
+          "value": ""
         },
         {
           "identifier": "enable_tile_remindo",
@@ -754,6 +803,13 @@
           "value": false
         },
         {
+          "identifier": "releasenotes_remindo",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes Remindo",
+          "value": ""
+        },
+        {
           "identifier": "enable_tile_skillsly",
           "type": "checkbox",
           "description": "Toggle tile",
@@ -761,11 +817,25 @@
           "value": false
         },
         {
+          "identifier": "releasenotes_skillsly",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes Skillsly",
+          "value": ""
+        },
+        {
           "identifier": "enable_tile_sowiso",
           "type": "checkbox",
           "description": "Toggle tile",
           "label": "Enable Sowiso",
           "value": false
+        },
+        {
+          "identifier": "releasenotes_sowiso",
+          "type": "text",
+          "description": "Url",
+          "label": "Releasenotes Sowiso",
+          "value": ""
         }
       ]
     },
