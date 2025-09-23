@@ -40,7 +40,7 @@
                 <ul class="blocks-list helpcenter-tiles">
                 {{#if settings.enable_tile_remindo}}
                     <li class="blocks-item">
-                        {{#if (compare settings.releasenotes_remindo "!=" "")}}<a href="{{settings.releasenotes_remindo}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
+                        {{#if settings.releasenotes_remindo}}<a href="{{settings.releasenotes_remindo}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.remindo.com/hc" class="blocks-item-link tile-remindo">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-remindo-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">Remindo</span>
@@ -49,7 +49,7 @@
                 {{/if}}
                 {{#if settings.enable_tile_skillsly}}
                     <li class="blocks-item">
-                        {{#if (compare settings.releasenotes_skillsly "!=" "")}}<a href="{{settings.releasenotes_skillsly}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
+                        {{#if settings.releasenotes_skillsly}}<a href="{{settings.releasenotes_skillsly}}" class="blocks-item-releasenotes"><span class="fa-solid fa-scroll"></span>Release notes</a>{{/if}}
                         <a href="https://support.skillsly.com/hc" class="blocks-item-link tile-skillsly">
                             <span class="category-icon" style="background: #fff url({{asset 'icon-skillsly-transparent.png'}}) no-repeat 100%/100%;">&nbsp;</span>
                             <span class="blocks-item-title">Skillsly</span>
