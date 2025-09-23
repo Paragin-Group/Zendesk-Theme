@@ -1532,7 +1532,8 @@ button.clear-button {
 .blocks-item-releasenotes {
     position: absolute;
     z-index: 1000;
-    top: -25px;
+    font-size: 0.8em;
+    top: -21px;
     right: 0;
     color: #aaa;
 }
@@ -1541,6 +1542,7 @@ button.clear-button {
 }
 .blocks-item-releasenotes span {
     margin-right: 5px;
+    color: #aaa !important;
 }
 
 
