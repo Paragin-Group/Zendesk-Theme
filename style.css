@@ -6587,3 +6587,25 @@ details summary > * {
 details summary + div {
     margin: 0 0 1em 16px;
 }
+
+/* Copy code */
+.copy-code-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px 12px;
+    font-size: 12px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color-dark);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+.copy-code-button:hover {
+    background-color: var(--primary-color-dark);
+}
+.copy-code-button:active {
+    transform: scale(0.95);
+}

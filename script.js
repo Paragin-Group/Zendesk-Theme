@@ -749,4 +749,38 @@ jQuery(document).ready(function ($) {
         bcText.innerText = bcText.innerText.replace(/(Knowledge base|Kennisbank)/g, '').trim();
     }
 
+
+    const codeBlocks = document.querySelectorAll('pre code');
+    codeBlocks.forEach(function(codeBlock) {
+        const pre = codeBlock.parentElement;
+
+        // Create wrapper for positioning
+        const wrapper = document.createElement('div');
+        wrapper.style.position = 'relative';
+        pre.parentNode.insertBefore(wrapper, pre);
+        wrapper.appendChild(pre);
+
+        // Create copy button
+        const copyButton = document.createElement('button');
+        copyButton.className = 'copy-code-button';
+        copyButton.textContent = 'Copy code';
+        copyButton.setAttribute('aria-label', 'Copy code to clipboard');
+
+        // Add click handler
+        copyButton.addEventListener('click', function() {
+            const code = codeBlock.textContent;
+            navigator.clipboard.writeText(code).then(function() {
+                copyButton.textContent = 'Copied!';
+                setTimeout(function() {
+                    copyButton.textContent = 'Copy code';
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Failed to copy:', err);
+            });
+        });
+        wrapper.appendChild(copyButton);
+    });
+
+
+
 });
