@@ -6569,6 +6569,11 @@ body .warning--message a, body .warning--message a:hover {
     border-radius: 0;
 }
 
+.helpcenter-tiles .blocks-item {
+    max-width:calc((100% - 30px) / 3);
+}
+
+
 /* Custom styles */
 figure.wysiwyg-media {
     margin-bottom: 1em;
