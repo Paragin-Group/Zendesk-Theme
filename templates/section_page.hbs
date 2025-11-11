@@ -66,6 +66,10 @@
           {{/each}}
         </ul>
       {{else}}
+
+          {{#unless section.sections}}
+              <i class="section-empty">{{t 'empty'}}</i>
+          {{/unless}}
       {{!--
     <i class="section-empty">
       <a href="{{section.url}}">{{t 'empty'}}</a>
