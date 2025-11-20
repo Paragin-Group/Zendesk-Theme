@@ -720,7 +720,8 @@ jQuery(document).ready(function ($) {
     $('#tabs-nav li').click(function () {
         $('#tabs-nav li').removeClass('active');
         $(this).addClass('active');
-        $('.tab-content').hide();
+        // $('.tab-content').hide();
+        $(this).parent().parent().find('.tab-content').hide(); // Only hide the tab-content in current block
 
         var activeTab = $(this).find('a').attr('href');
         $(activeTab).fadeIn();
