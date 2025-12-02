@@ -6577,11 +6577,12 @@ body .warning--message a, body .warning--message a:hover {
 
 
 .footer-tiles {
-    margin:1em 0;
+    margin:100px 0 1em 0;
 }
 
 .footer-tiles .blocks-list {
     gap:5px;
+    justify-content: center;
 }
 
 
