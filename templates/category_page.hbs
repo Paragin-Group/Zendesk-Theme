@@ -40,6 +40,11 @@
                   {{/each}}
                </ul>
                {{/if}}
+                {{#if more_sections}}
+                    <a href="{{url}}" class="see-all-sections">
+                        {{t 'see_more'}}
+                    </a>
+                {{/if}}
 
                {{!-- Article list --}}
                {{#if articles}}
