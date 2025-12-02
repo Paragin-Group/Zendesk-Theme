@@ -39,7 +39,12 @@
                      <li class="section-lists-item element-fade animate__animated"><a href="{{url}}">{{name}}</a></li>
                   {{/each}}
                </ul>
-               {{/if}}
+                {{/if}}
+                {{#if more_sections}}
+                    <a href="{{url}}" class="see-all-sections element-fade animate__animated">
+                        {{t 'show_all_sections' count=section_count}}
+                    </a>
+                {{/if}}
 
                {{!-- Article list --}}
                {{#if articles}}
