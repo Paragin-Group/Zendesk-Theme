@@ -6573,6 +6573,56 @@ body .warning--message a, body .warning--message a:hover {
     max-width:calc((100% - 30px) / 3);
 }
 
+/* Footer Tiles */
+
+
+.footer-tiles {
+    margin:1em 0;
+}
+
+.footer-tiles .blocks-list {
+    gap:5px;
+}
+
+
+.footer-tiles .blocks-item {
+    border:none;
+    flex: 1 0 100px;
+    max-width: 100px;
+}
+
+@media (min-width: 768px) {
+    .footer-tiles .blocks-item {
+        margin:0;
+    }
+}
+
+.footer-tiles .blocks-item span.category-icon {
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    margin-top:0;
+    border-radius:0;
+}
+
+.footer-tiles .blocks-item .blocks-item-link {
+    padding:20px 0 4px 0;
+}
+
+
+.brand-coachview .footer-tiles .tile-remindo,
+.brand-skillsly .footer-tiles .tile-skillsly,
+.brand-gradework .footer-tiles .tile-gradework,
+.brand-onstage .footer-tiles .tile-onstage,
+.brand-ontrac .footer-tiles .tile-ontrac,
+.brand-ompt .footer-tiles .tile-ompt,
+.brand-sowiso .footer-tiles .tile-sowiso,
+.brand-coachview .footer-tiles .tile-coachview,
+.brand-paraginintegrations .footer-tiles .tile-paraginintegrations,
+.brand-b3net .footer-tiles .tile-b3net {
+    display:none;
+}
+
 
 /* Custom styles */
 figure.wysiwyg-media {
