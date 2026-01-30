@@ -68,9 +68,13 @@
     </div>
 {{/if}}
 <footer class="footer">
-   <div class="container">
+   <div class="container text-right">
         {{#if (not settings.enable_tiles)}}
-            <a href="https://www.paragin.com" target="_blank" title="Paragin Group"><img src="{{asset 'logo-paragin.svg'}}" alt="Paragin Group" width="200" /></a>
+            {{#is current_locale.name 'Nederlands'}}
+                <a href="https://www.paragin.com" target="_blank" title="Paragin Group"><img src="{{asset 'by-paragingroup_NL.svg'}}" alt="Paragin Group" height="22" /></a>
+            {{else}}
+                <a href="https://www.paragin.com" target="_blank" title="Paragin Group"><img src="{{asset 'by-paragingroup_EN.svg'}}" alt="Paragin Group" height="22" /></a>
+            {{/is}}
         {{/if}}
    </div>
 </footer>
