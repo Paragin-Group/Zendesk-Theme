@@ -67,8 +67,12 @@
         </section>
     </div>
 {{/if}}
-<footer class="footer text-center">
-   <div class="container"></div>
+<footer class="footer">
+   <div class="container">
+        {{#if (not settings.enable_tiles)}}
+            <a href="https://www.paragin.com" target="_blank" title="Paragin Group"><img src="{{asset 'logo-paragin.svg'}}" alt="Paragin Group" width="200" /></a>
+        {{/if}}
+   </div>
 </footer>
 
 {{!-- close brand container --}}
