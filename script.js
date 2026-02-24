@@ -714,7 +714,7 @@ jQuery(document).ready(function ($) {
     // Tabs
     $('#tabs-nav li:first-child').addClass('active');
     $('.tab-content').hide();
-    $('.tab-content:first').show();
+    $('.tab-content:first-child').show();
 
     // Click function
     $('#tabs-nav li').click(function () {
