@@ -149,7 +149,8 @@
 
     {{!-- Search result list --}}
     <section id="main-content" class="search-results-column">
-      <h1 class="search-results-subheading element-fade animate__animated">
+        {{generative_answers}}
+        <h1 class="search-results-subheading element-fade animate__animated">
         {{#if results}}
           {{#is current_filter.identifier 'unified'}}
             {{#if content_tag_filters }}
