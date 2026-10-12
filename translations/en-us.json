@@ -176,6 +176,8 @@
   "enable_signin_label": "Sign in link",
   "enable_ticket_description": "Show submit ticket button on the header",
   "enable_ticket_label": "Submit a request link",
+  "enable_ticketforsignedin_description": "Show submit ticket button on the header",
+  "enable_ticketforsignedin_label": "Submit a request link for signed in users",
   "enable_community_description": "Show community button on the header",
   "enable_community_label": "Community link",
   "add_id_description": "Category ID",

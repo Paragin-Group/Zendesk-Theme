@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -155,8 +155,8 @@
         {
           "identifier": "enable_ticketforsignedin",
           "type": "checkbox",
-          "description": "enable_ticket_description",
-          "label": "Submit a request link for signed in users",
+          "description": "enable_ticketforsignedin_description",
+          "label": "enable_ticketforsignedin_label",
           "value": false
         },
         {
