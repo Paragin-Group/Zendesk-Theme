@@ -40,8 +40,15 @@
 
             {{!-- New ticket URL --}}
             {{#if settings.enable_ticket}}
-              {{link 'new_request' class='submit-a-request xs_hide'}}
+                 {{link 'new_request' class='submit-a-request xs_hide'}}
+            {{else}}
+                {{#if signed_in}}
+                    {{#if settings.enable_ticket_forsignedin}}
+                        {{link 'new_request' class='submit-a-request xs_hide'}}
+                    {{/if}}
+                {{/if}}
             {{/if}}
+
          </nav>
          {{#if signed_in}}
          <div class="user-info dropdown">
