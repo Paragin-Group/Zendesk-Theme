@@ -26,6 +26,123 @@
     {{t 'submit_a_request'}}
   </h1>
 
+{{#isnt settings.new_request_article ''}}
+    <div id="new-request-article" hidden>
+      <div class="article-body"></div>
+      <div class="article-attachments" hidden>
+        <ul class="attachments"></ul>
+      </div>
+    </div>
+    <script>
+        (function () {
+            var id = {{json settings.new_request_article}};
+            var downloadLabel = {{json (t 'download')}};
+            var root = document.getElementById("new-request-article");
+            var bodyEl = root.querySelector(".article-body");
+            var attachmentsEl = root.querySelector(".article-attachments");
+            var listEl = attachmentsEl.querySelector(".attachments");
+            var icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="attachment-icon"><path fill="none" stroke="currentColor" stroke-linecap="round" d="M9.5 4v7.7c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V3C6.5 1.6 7.6.5 9 .5s2.5 1.1 2.5 2.5v9c0 1.9-1.6 3.5-3.5 3.5S4.5 13.9 4.5 12V4"/></svg>';
+
+            if (!id || !/^\d+$/.test(String(id))) {
+                return;
+            }
+
+            function formatSize(bytes) {
+                if (typeof bytes !== "number" || !isFinite(bytes) || bytes < 0) {
+                    return "";
+                }
+                var units = ["B", "KB", "MB", "GB"];
+                var value = bytes;
+                var unit = 0;
+                while (value >= 1024 && unit < units.length - 1) {
+                    value /= 1024;
+                    unit += 1;
+                }
+                var rounded = unit === 0 ? String(Math.round(value)) : String(Math.round(value * 10) / 10);
+                return rounded + " " + units[unit];
+            }
+
+            function attachmentHref(item) {
+                var path = item.relative_path || "";
+                if (path.charAt(0) === "/" && path.charAt(1) !== "/") {
+                    return path;
+                }
+                var url = item.content_url || "";
+                if (url.indexOf("https://") === 0 || url.indexOf("http://") === 0) {
+                    return url;
+                }
+                return "";
+            }
+
+            Promise.all([
+                fetch("/api/v2/help_center/articles/" + id + ".json").then(function (response) {
+                    return response.ok ? response.json() : null;
+                }),
+                fetch("/api/v2/help_center/articles/" + id + "/attachments/block.json").then(function (response) {
+                    return response.ok ? response.json() : null;
+                })
+            ]).then(function (results) {
+                var articleData = results[0];
+                var attachmentData = results[1];
+                if (!articleData || !articleData.article) {
+                    return;
+                }
+
+                bodyEl.innerHTML = articleData.article.body;
+
+                var attachments = (attachmentData && attachmentData.article_attachments) || [];
+                attachments.forEach(function (item) {
+                    if (!item || item.inline === true) {
+                        return;
+                    }
+                    var href = attachmentHref(item);
+                    if (!href) {
+                        return;
+                    }
+
+                    var li = document.createElement("li");
+                    li.className = "attachment-item";
+                    li.insertAdjacentHTML("beforeend", icon);
+
+                    var name = document.createElement("a");
+                    name.href = href;
+                    name.target = "_blank";
+                    name.rel = "noopener";
+                    name.textContent = item.display_file_name || item.file_name || "";
+                    li.appendChild(name);
+
+                    var meta = document.createElement("div");
+                    meta.className = "attachment-meta meta-group";
+
+                    var size = formatSize(item.size);
+                    if (size) {
+                        var sizeEl = document.createElement("span");
+                        sizeEl.className = "attachment-meta-item meta-data";
+                        sizeEl.textContent = size;
+                        meta.appendChild(sizeEl);
+                    }
+
+                    var download = document.createElement("a");
+                    download.href = href;
+                    download.target = "_blank";
+                    download.rel = "noopener";
+                    download.className = "attachment-meta-item meta-data";
+                    download.textContent = downloadLabel;
+                    meta.appendChild(download);
+
+                    li.appendChild(meta);
+                    listEl.appendChild(li);
+                });
+
+                if (listEl.children.length) {
+                    attachmentsEl.hidden = false;
+                }
+                root.hidden = false;
+            }).catch(function () {});
+        })();
+    </script>
+{{/isnt}}
+
   {{!-- Ticket form --}}
   <div id="main-content" class="form">
     <div id="new-request-form"></div>

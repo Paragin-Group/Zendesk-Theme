@@ -1,7 +1,7 @@
 {
   "name": "Paragin Group Theme",
   "author": "Paragin",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "api_version": 4,
   "default_locale": "en-us",
   "settings": [
@@ -992,6 +992,13 @@
           "description": "support_message_text_description",
           "label": "support_message_text_label",
           "value": "Due to the timezone differences, our support team may take several hours to get in touch with you."
+        },
+        {
+          "identifier": "new_request_article",
+          "type": "text",
+          "description": "Article ID shown above the request form. Leave empty to hide.",
+          "label": "Request page article ID",
+          "value": ""
         }
       ]
     },

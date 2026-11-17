@@ -2538,6 +2538,10 @@ button.clear-button {
 
 /***** Attachments *****/
 /* Styles attachments inside posts, articles and comments */
+#new-request-article .article-attachments {
+    margin-top: 24px;
+}
+
 .attachments .attachment-item {
     padding-left: 20px;
     position: relative;
